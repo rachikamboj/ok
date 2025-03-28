@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+            display: none;
+        }
+        .message {
+            font-size: 20px;
+            margin-top: 20px;
+            display: none;
+        }
+        .btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Anniversary, My Love! ❤️</h1>
+        <p>Click the button to reveal my special message for you!</p>
+        <button class="btn" onclick="showMessage()">Reveal</button>
+        <div class="heart" id="heart">❤️</div>
+        <p class="message" id="message">You are my everything, my love! Happy Anniversary! 💖</p>
+    </div>
+    
+    <script>
+        function showMessage() {
+            document.getElementById("heart").style.display = "block";
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
